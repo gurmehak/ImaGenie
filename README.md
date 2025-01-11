@@ -1,28 +1,24 @@
 # imagenie
 
-Scale, flip, greyscale and blur images!!
+A python package to support essential trasformations on image datasets
 
 ## Installation
 
-``` bash
+```bash
 $ pip install imagenie
 ```
 
 ## Usage
 
--   TODO
+- TODO
 
 ## Contributing
 
 Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
 
-## Contributors
-
-The package was created by following contributors: Yuhan Fan, Yichun Liu, Agam Sanghera and Gurmehak Kaur.
-
 ## License
 
-`imagenie` was created by Yuhan Fan,Yichun Liu,Agam Sanghera,Gurmehak Kaur. It is licensed under the terms of the MIT license.
+`imagenie` was created by Agam Sanghera, Gurmehak Kaur, Yuhan Fan, Yichun Liu. It is licensed under the terms of the MIT license.
 
 ## Credits
 

@@ -7,8 +7,8 @@
 # -- Project information -----------------------------------------------------
 
 project = u"imagenie"
-copyright = u"2025, Yuhan Fan,Yichun Liu,Agam Sanghera,Gurmehak Kaur"
-author = u"Yuhan Fan,Yichun Liu,Agam Sanghera,Gurmehak Kaur"
+copyright = u"2025, Agam Sanghera, Gurmehak Kaur, Yuhan Fan, Yichun Liu"
+author = u"Agam Sanghera, Gurmehak Kaur, Yuhan Fan, Yichun Liu"
 
 # -- General configuration ---------------------------------------------------
 
