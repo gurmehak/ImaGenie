@@ -1,4 +1,4 @@
-def flip(image, direction='horizontal'):
+def flip(image, direction=0):
     """
     Flips an image either horizontally or vertically.
 
@@ -29,5 +29,4 @@ def flip(image, direction='horizontal'):
     Flip an image vertically:
     >>> flipped_image = flip_image(image, 1)
     """
-    
     pass
