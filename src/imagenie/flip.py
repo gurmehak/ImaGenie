@@ -29,4 +29,5 @@ def flip(image, direction='horizontal'):
     Flip an image vertically:
     >>> flipped_image = flip_image(image, 1)
     """
+    
     pass
