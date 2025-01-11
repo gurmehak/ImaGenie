@@ -16,4 +16,5 @@ def augment(images, operations):
     list of ndarray
         The list of augmented images.
     """
+    
     pass
