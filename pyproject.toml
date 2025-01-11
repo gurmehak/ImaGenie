@@ -1,14 +1,21 @@
 [tool.poetry]
 name = "imagenie"
 version = "0.1.0"
-description = "Scale, flip, greyscale and blur images!!"
-authors = ["Yuhan Fan,Yichun Liu,Agam Sanghera,Gurmehak Kaur"]
+description = "A python package to support essential trasformations on image datasets"
+authors = ["Agam Sanghera, Gurmehak Kaur, Yuhan Fan, Yichun Liu"]
 license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.11"
 
+[tool.semantic_release]
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]                                                    # version location
+branch = "main"                                      # branch to make releases of
+changelog_file = "CHANGELOG.md"                      # changelog file
+build_command = "pip install poetry && poetry build" # build dists 
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
