@@ -15,3 +15,4 @@ dependencies:
   - scikit-learn=1.5.2
   - poetry=1.4.0
   - cookiecutter=2.5.0
+  
