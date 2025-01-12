@@ -4,11 +4,11 @@ ImaGenie is a Python package for image augmentation and modification, providing 
 
 ## Features
 
-`flip(image, direction=0)`: Flips the input image either horizontally or vertically. Useful for augmenting datasets by introducing mirror-image variations.
-`scale(image, N)`: Resizes the input image by a given scale factor `N`. This is crucial for normalizing or creating variations in image resolution.
-`blur(image, stdev=1.0, radius=None)`: Applies a Gaussian blur effect to the image. Helps simulate real-world noise or reduce sharpness for specific use cases.
-`greyscale(image)`: Converts the image to grayscale. Ideal for models that only require intensity information, excluding color features.
-`augment(image)`: Applies a sequence of user-defined augmentation operations to a list of images. Useful for image generating images for computer vision tasks.
+* `flip(image, direction=0)`: Flips the input image either horizontally or vertically. Useful for augmenting datasets by introducing mirror-image variations.
+* `scale(image, N)`: Resizes the input image by a given scale factor `N`. This is crucial for normalizing or creating variations in image resolution.
+* `blur(image, stdev=1.0, radius=None)`: Applies a Gaussian blur effect to the image. Helps simulate real-world noise or reduce sharpness for specific use cases.
+* `greyscale(image)`: Converts the image to grayscale. Ideal for models that only require intensity information, excluding color features.
+* `augment(image)`: Applies a sequence of user-defined augmentation operations to a list of images. Useful for image generating images for computer vision tasks.
 
 ## Installation
 
