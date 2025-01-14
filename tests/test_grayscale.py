@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from imagenie import grayscale 
+from ImaGenie.grayscale import grayscale 
 
 def test_grayscale():
     """
