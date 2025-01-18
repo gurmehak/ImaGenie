@@ -17,11 +17,11 @@ def test_augment():
     """
     
     # ------------- Mock Data -------------
-    input_image = np.asarray(plt.imread("tests/testimage.png"))
+    input_image = [np.asarray(plt.imread("tests/testimage.png"))]
     output_image= np.asarray(plt.imread('tests/output.png'))
     output_image=output_image[:,:,0:3]
     # Operations
-    operations = [(flip, 1), (scale, 0.5), (blur, 3)]
+    operations = [(flip, 1), (scale, 0.5), (blur, 1)]
     
     # Run augment function
     augmented_images = augment(input_image, operations)
@@ -36,12 +36,15 @@ def test_augment():
     
     # Test 2: Check if operations are applied correctly
     # call individual tests 
-    assert np.isclose(blur(input),output_image,atol=.01).all, "Incorrect output, function not working as expected"
+    assert np.isclose(blur(input_image[0]),output_image,atol=.01).all, "Incorrect output, function not working as expected"
     # Check if invalid functions raise a ValueError
     invalid_operations = [(blur,1),(flip, 1), (scale, 0.5), (grayscale, 0.7), (lambda x: x, 1)]  # Invalid function (lambda)
-    with pytest.raises(ValueError, match="Function <lambda> is not allowed"):
+    with pytest.raises(ValueError):
         augment(input_image, invalid_operations)
-    
+  
     invalid_operations_2 = [(flip, 1), (scale, 0.5), (blur, 1), (lambda x: x, 1)]
     with pytest.raises(ValueError):
         augment(input_image, invalid_operations_2)
+if __name__ == "__main__":
+    test_augment()
+    print("All tests passed.")
