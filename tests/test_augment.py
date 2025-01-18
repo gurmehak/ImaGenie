@@ -38,7 +38,7 @@ def test_augment():
     # call individual tests 
     assert np.isclose(blur(input_image[0]),output_image,atol=.01).all, "Incorrect output, function not working as expected"
     # Check if invalid functions raise a ValueError
-    invalid_operations = [(blur,1),(flip, 1), (scale, 0.5), (grayscale, 0.7), (lambda x: x, 1)]  # Invalid function (lambda)
+    invalid_operations = [(blur,1),(flip, 1), (scale, 0.5), (lambda x: x, 1)]  # Invalid function (lambda)
     with pytest.raises(ValueError):
         augment(input_image, invalid_operations)
   
