@@ -55,19 +55,12 @@ def blur(image, stdev=1.0):
     else:
         return image
     
-    
     if not isinstance(image, np.ndarray):
         raise TypeError("Image must be a numpy array")
     
     #Warn if the original image exceeds 1028 * 1028
     if image.shape[0] > 1028 or image.shape[1] > 1028:
-        warnings.warn("The input image exceeds the maximum size of 1028x1028, resizing to 1028x1028 and working with it")
-        if image.shape[0] > 1028 or image.shape[1] > 1028:
-            image=cv2.resize(image, (0, 0), fx = 1028, fy = 1028)
-        elif image.shape[0]>1028:
-            image=cv2.resize(image, (0, 0), fx = 1028, fy = image.shape[1])
-        elif image.shape[1]>1028:
-            image=cv2.resize(image, (0, 0), fy = 1028, fx = image.shape[0])
+        raise ValueError("Input image size exceeds the 1028x1028 limit.")
     
     filter_size = 2 * int(4 * stdev + 0.5) + 1
     gaussian_filter = np.zeros((filter_size, filter_size), np.float32)
