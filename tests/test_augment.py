@@ -38,10 +38,10 @@ def test_augment():
     # call individual tests 
     assert np.isclose(blur(input),output_image,atol=.01).all, "Incorrect output, function not working as expected"
     # Check if invalid functions raise a ValueError
-    invalid_operations = [(blur,1)(flip, 1), (scale, 0.5), (grayscale, 0.7), (lambda x: x, 1)]  # Invalid function (lambda)
+    invalid_operations = [(blur,1),(flip, 1), (scale, 0.5), (grayscale, 0.7), (lambda x: x, 1)]  # Invalid function (lambda)
     with pytest.raises(ValueError, match="Function <lambda> is not allowed"):
         augment(input_image, invalid_operations)
     
-    invalid_operations_2 = [(flip, 1), (scale, 0.5), (blur, 3), (lambda x: x, 1)]
+    invalid_operations_2 = [(flip, 1), (scale, 0.5), (blur, 1), (lambda x: x, 1)]
     with pytest.raises(ValueError):
         augment(input_image, invalid_operations_2)
