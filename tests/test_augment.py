@@ -1,5 +1,6 @@
 import numpy as np
 import pytest
+import matplotlib.pyplot as plt
 from imagenie.augment import augment
 from imagenie.flip import flip  
 from imagenie.scale import scale  
@@ -16,16 +17,14 @@ def test_augment():
     """
     
     # ------------- Mock Data -------------
-    input_images = [
-        np.array([[1, 2], [3, 4]]),
-        np.array([[5, 6], [7, 8]])
-    ]
-    
+    input_image = np.asarray(plt.imread("tests/testimage.png"))
+    output_image= np.asarray(plt.imread('tests/output.png'))
+    output_image=output_image[:,:,0:3]
     # Operations
     operations = [(flip, 1), (scale, 0.5), (blur, 3)]
     
     # Run augment function
-    augmented_images = augment(input_images, operations)
+    augmented_images = augment(input_image, operations)
 
 
     # --------------- Tests ---------------
@@ -37,12 +36,12 @@ def test_augment():
     
     # Test 2: Check if operations are applied correctly
     # call individual tests 
-    
+    assert np.isclose(blur(input),output_image,atol=.01).all, "Incorrect output, function not working as expected"
     # Check if invalid functions raise a ValueError
-    invalid_operations = [(flip, 1), (scale, 0.5), (grayscale, 0.7), (lambda x: x, 1)]  # Invalid function (lambda)
+    invalid_operations = [(blur,1)(flip, 1), (scale, 0.5), (grayscale, 0.7), (lambda x: x, 1)]  # Invalid function (lambda)
     with pytest.raises(ValueError, match="Function <lambda> is not allowed"):
-        augment(input_images, invalid_operations)
+        augment(input_image, invalid_operations)
     
     invalid_operations_2 = [(flip, 1), (scale, 0.5), (blur, 3), (lambda x: x, 1)]
     with pytest.raises(ValueError):
-        augment(input_images, invalid_operations_2)
+        augment(input_image, invalid_operations_2)
