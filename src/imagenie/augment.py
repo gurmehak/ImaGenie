@@ -2,7 +2,7 @@ import numpy as np
 import warnings
 
 # Allowed functions
-ALLOWED_FUNCTIONS = ['flip', 'scale', 'blur']
+ALLOWED_FUNCTIONS = ['flip', 'scale', 'blur','grayscale']
 
 def augment(images, operations):
     """
