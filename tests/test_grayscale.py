@@ -1,5 +1,8 @@
 import unittest
 import numpy as np
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 from imagenie.grayscale import grayscale 
 
 def test_grayscale():
@@ -54,3 +57,4 @@ def test_grayscale():
 if __name__ == "__main__":
     test_grayscale()
     print("All tests passed.")
+
