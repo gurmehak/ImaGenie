@@ -2,7 +2,7 @@ import numpy as np
 import warnings
 
 # Allowed functions
-ALLOWED_FUNCTIONS = ['flip', 'scale', 'grayscale', 'blur']
+ALLOWED_FUNCTIONS = ['flip', 'scale', 'blur','grayscale']
 
 def augment(images, operations):
     """
@@ -33,7 +33,6 @@ def augment(images, operations):
         # Validate size limit
         if image.shape[0] > 1028 or image.shape[1] > 1028:
             raise ValueError("Input image size exceeds the 1028x1028 limit.")
-        
         # Break down the operations into functions and their respective parameters
         for operation in operations:
             func, *params = operation
