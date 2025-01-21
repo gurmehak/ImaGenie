@@ -5,6 +5,6 @@ src
    :maxdepth: 2
    :caption: Contents:
 
-   grayscale
    modules
-   grayscale_vignette
+   ../capybara
+   ../example
