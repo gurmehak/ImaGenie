@@ -16,10 +16,10 @@ author = u"Agam Sanghera, Gurmehak Kaur, Yuhan Fan, Yichun Liu"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "myst_nb",
-    "autoapi.extension",
-    "sphinx.ext.napoleon",
-    "sphinx.ext.viewcode",
+    'sphinx.ext.autodoc',
+    'sphinx.ext.napoleon',
+    'sphinx_rtd_theme',
+    'nbsphinx',
 ]
 autoapi_dirs = ["../src"]
 
@@ -34,3 +34,5 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # a list of builtin themes.
 #
 html_theme = "sphinx_rtd_theme"
+
+master_doc = "source/index"
