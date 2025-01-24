@@ -1981,6 +1981,18 @@ files = [
 windows-terminal = ["colorama (>=0.4.6)"]
 
 [[package]]
+name = "pypandoc"
+version = "1.15"
+description = "Thin wrapper for pandoc."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "pypandoc-1.15-py3-none-any.whl", hash = "sha256:4ededcc76c8770f27aaca6dff47724578428eca84212a31479403a9731fc2b16"},
+    {file = "pypandoc-1.15.tar.gz", hash = "sha256:ea25beebe712ae41d63f7410c08741a3cab0e420f6703f95bc9b3a749192ce13"},
+]
+
+[[package]]
 name = "pyparsing"
 version = "3.2.1"
 description = "pyparsing module - Classes and methods to define and execute parsing grammars"
@@ -2906,4 +2918,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "5580cb52b02f0225702edf61ac47be38067da6a6f096c3598db157544dd35503"
+content-hash = "ed0ab68f2c90dbd62aedc528968956c96708055f490419725b92e54cfedac0b8"
