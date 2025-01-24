@@ -20,6 +20,9 @@ extensions = [
     "autoapi.extension",
     "sphinx.ext.napoleon",
     "sphinx.ext.viewcode",
+    'sphinx.ext.autodoc',
+    'sphinx_rtd_theme',
+    'nbsphinx',
 ]
 autoapi_dirs = ["../src"]
 
@@ -34,3 +37,5 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # a list of builtin themes.
 #
 html_theme = "sphinx_rtd_theme"
+
+master_doc = "source/index"
