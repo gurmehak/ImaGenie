@@ -1,7 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
-import cv2
-import warnings
 def blur(image, stdev=1.0):
     """
     Add noise to image using a Gaussian filter

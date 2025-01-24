@@ -1,3 +1,4 @@
+[![codecov](https://codecov.io/github/UBC-MDS/ImaGenie/graph/badge.svg?token=Dd6MnDTOH7)](https://codecov.io/github/UBC-MDS/ImaGenie)
 # ImaGenie
 
 ImaGenie is a Python package for image augmentation and modification, providing a variety of functions to manipulate images for machine learning, computer vision, or creative purposes. Whether you need to flip, scale, convert to grayscale, or blur images, ImaGenie is your one-stop solution for fast and efficient image manipulation.
