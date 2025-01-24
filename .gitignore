@@ -141,3 +141,4 @@ dmypy.json
 # MacOS
 .DS_Store
 src/imagenie/check.ipynb
+.virtual_documents/docs/example.ipynb
