@@ -100,4 +100,4 @@ def blur(image, stdev=1.0):
 
         im_filtered[:,:,c]=image_conv[h:h_end,w:w_end]
 
-    return(im_filtered)
+    return(im_filtered.round().astype(np.int32))
