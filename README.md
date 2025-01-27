@@ -13,9 +13,31 @@ ImaGenie is a Python package for image augmentation and modification, providing 
 * `augment(image)`: Applies a sequence of user-defined augmentation operations to a list of images. Useful for image generating images for computer vision tasks.
 
 ## Installation
-
+To install from pypi:
 ```bash
 $ pip install imagenie
+```
+
+To build from the github repo follow the following steps:
+Clone the repository using the following command :
+
+```bash
+$ git clone https://github.com/UBC-MDS/ImaGenie.git
+```
+then navigate to the repository by running the following command 
+
+```bash
+$ cd ImaGenie
+```
+Then run the following command:
+```bash
+$ poetry install
+```
+
+## Running test Suite
+In the package directory run the following command to run the test suit for this package:
+```bash
+$ pytest
 ```
 
 ## Python Ecosystem Integration
