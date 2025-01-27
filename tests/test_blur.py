@@ -23,5 +23,3 @@ def test_blur():
 
     #Test blurring function
     assert np.isclose(blur(input),expected[:,:,0:3],atol=.01).all, "Incorrect output, function not working as expected"
-if __name__=="__main__":
-    test_blur()
