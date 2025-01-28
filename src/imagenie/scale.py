@@ -9,7 +9,7 @@ def scale(image, N = None):
 
     Parameters
     ----------
-    image : np.ndarray
+    image : ndarray
         The input image to be scaled. Must be a NumPy array.
     
     N: float
@@ -17,7 +17,7 @@ def scale(image, N = None):
 
     Returns
     -------
-    np array
+    ndarray
         The scaled image that is represented as np array.
 
     Examples
