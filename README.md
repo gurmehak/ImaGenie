@@ -18,27 +18,6 @@ To install from pypi:
 $ pip install imagenie
 ```
 
-To build from the github repo follow the following steps:
-Clone the repository using the following command :
-
-```bash
-$ git clone https://github.com/UBC-MDS/ImaGenie.git
-```
-then navigate to the repository by running the following command 
-
-```bash
-$ cd ImaGenie
-```
-Then run the following command:
-```bash
-$ poetry install
-```
-
-## Running test Suite
-In the package directory run the following command to run the test suit for this package:
-```bash
-$ pytest
-```
 
 ## Python Ecosystem Integration
 
@@ -67,3 +46,4 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 ## Credits
 
 `imagenie` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
