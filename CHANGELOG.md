@@ -1,6 +1,25 @@
 # CHANGELOG
 
 
+## v1.3.0 (2025-02-02)
+
+### Bug Fixes
+
+- Addressed issue 15 adding Developer notes
+  ([`d4fc6f3`](https://github.com/UBC-MDS/ImaGenie/commit/d4fc6f34d9cc0ecfdfe145ba170cbc6c16601b7f))
+
+### Features
+
+- Added CHANGELOG, Contributing Code of Conduct and API reference
+  ([`fcc5517`](https://github.com/UBC-MDS/ImaGenie/commit/fcc5517a1f0577c1d0d97823b1b573ce8fd6a796))
+
+- Chnaged theme to make more visually appealing
+  ([`d4149c4`](https://github.com/UBC-MDS/ImaGenie/commit/d4149c4b2e8a14f5d361f202a32bb263bd4ee470))
+
+- Updated lock file to include new them
+  ([`2a34f95`](https://github.com/UBC-MDS/ImaGenie/commit/2a34f95666754d054e6cf47540bf8ab252c0f340))
+
+
 ## v1.2.0 (2025-02-02)
 
 
