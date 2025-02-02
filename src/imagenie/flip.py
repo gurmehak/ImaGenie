@@ -7,7 +7,7 @@ def flip(image, direction=0):
 
     Parameters:
     ----------
-    image : ndarray
+    image : np.ndarray
         The input image to be flipped, represented as a NumPy array or similar format.
     direction : str, optional
         The direction in which to flip the image:
@@ -16,7 +16,7 @@ def flip(image, direction=0):
 
     Returns:
     -------
-    ndarray
+    np.ndarray
         The flipped image as a NumPy array.
 
     Raises:
