@@ -5,7 +5,8 @@ import warnings
 
 
 def scale(image, N = None):
-    """Scale an image file by a factor of N.
+    """
+    Scale an image file by a factor of N.
 
     Parameters
     ----------
