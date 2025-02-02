@@ -42,9 +42,6 @@ def blur(image, stdev=1.0):
             raise TypeError("Standard deviation must be a numeric value (int or float).")
         if stdev <= 0:
             raise ValueError("Standard deviation must be a positive number.")
-    # Calculate new size. If N is None, return original image numpy array
-    else:
-        return image
     
     if not isinstance(image, np.ndarray):
         raise TypeError("Image must be a numpy array")
