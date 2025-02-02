@@ -31,6 +31,7 @@ To install from pypi:
 $ pip install imagenie
 ```
 
+
 To build from the github repo follow the following steps:
 Clone the repository using the following command :
 
@@ -124,3 +125,4 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 ## Credits
 
 `imagenie` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
