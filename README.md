@@ -2,7 +2,7 @@
 [![codecov](https://codecov.io/github/UBC-MDS/ImaGenie/graph/badge.svg?token=Dd6MnDTOH7)](https://codecov.io/github/UBC-MDS/ImaGenie)
 # ImaGenie
 
-ImaGenie is a Python package for image augmentation and modification, providing a variety of functions to manipulate images for machine learning, computer vision, or creative purposes. Whether you need to flip, scale, convert to grayscale, or blur images, ImaGenie is your one-stop solution for fast and efficient image manipulation.
+`imagenie` is a Python package for image augmentation and modification, providing a variety of functions to manipulate images for machine learning, computer vision, or creative purposes. Whether you need to flip, scale, convert to grayscale, or blur images, `imagenie` is your one-stop solution for fast and efficient image manipulation.
 
 ## Features
 
@@ -95,7 +95,7 @@ image2 = plt.imread(IMAGE_PATH)
 
 ## Python Ecosystem Integration
 
-ImaGenie fits well within the Python ecosystem by providing functionality for image manipulation and augmentation. There are several popular libraries for image processing, that offer more complex functionalities, but this package provides a simple, user-friendly interface for common operations tailored for specific image manipulation tasks. 
+This package fits well within the Python ecosystem by providing functionality for image manipulation and augmentation. There are several popular libraries for image processing, that offer more complex functionalities, but this package provides a simple, user-friendly interface for common operations tailored for specific image manipulation tasks. 
 
 Reference for other image processing libraries:
 - PIL (Python Imaging Library): [PIL](https://python-pillow.org/)
