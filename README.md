@@ -1,6 +1,7 @@
 [![Documentation Status](https://readthedocs.org/projects/imagenie/badge/?version=latest)](https://imagenie.readthedocs.io/en/latest/?badge=latest)
 [![codecov](https://codecov.io/github/UBC-MDS/ImaGenie/graph/badge.svg?token=Dd6MnDTOH7)](https://codecov.io/github/UBC-MDS/ImaGenie)
 ![Python version](https://img.shields.io/pypi/pyversions/ImaGenie)
+![Last commit](https://img.shields.io/github/last-commit/UBC-MDS/ImaGenie)
 
 
 # ImaGenie
