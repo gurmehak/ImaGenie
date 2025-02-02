@@ -51,7 +51,7 @@ def blur(image, stdev=1.0):
     
     #Warn if the original image exceeds 1028 * 1028
     if image.shape[0] > 1028 or image.shape[1] > 1028:
-        raise ValueError("Input image size exceeds the 1028x1028 limit.")
+        raise ValueError("The input image exceeds the maximum size of 1028x1028.")
     
     filter_size = 2 * int(4 * stdev + 0.5) + 1
     gaussian_filter = np.zeros((filter_size, filter_size), np.float32)
