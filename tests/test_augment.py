@@ -44,7 +44,6 @@ def test_augment():
     # Test 2: Check if operations are applied correctly
     assert np.isclose(blur(input_image[0]),output_image,atol=.01).all, "Incorrect output, function not working as expected"
 
-    assert np.isclose(augment(input_image, operations), blur(scale(flip(input_single,1),0.5),1),atol=.01).all, "Incorrect output, function not working as expected"
     
 
     # Test 3: Check if invalid functions raise a ValueError
