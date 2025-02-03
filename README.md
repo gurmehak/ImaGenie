@@ -2,8 +2,10 @@
 [![codecov](https://codecov.io/github/UBC-MDS/ImaGenie/graph/badge.svg?token=Dd6MnDTOH7)](https://codecov.io/github/UBC-MDS/ImaGenie)
 ![Python version](https://img.shields.io/pypi/pyversions/ImaGenie)
 ![Last commit](https://img.shields.io/github/last-commit/UBC-MDS/ImaGenie)
-
-
+[![ci-cd](https://github.com/UBC-MDS/ImaGenie/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/ImaGenie/actions/workflows/ci-cd.yml)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![PyPI - Version](https://img.shields.io/pypi/v/imagenie)](https://pypi.org/project/imagenie/)
+[![Test PyPI - Version](https://img.shields.io/badge/Test_PiPy-1.5.0-0)](https://test.pypi.org/project/imagenie/)
 # ImaGenie
 
 `imagenie` is a Python package for image augmentation and modification, providing a variety of functions to manipulate images for machine learning, computer vision, or creative purposes. Whether you need to flip, scale, convert to grayscale, or blur images, `imagenie` is your one-stop solution for fast and efficient image manipulation.
