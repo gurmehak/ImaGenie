@@ -1,6 +1,31 @@
 # CHANGELOG
 
 
+## v1.5.0 (2025-02-03)
+
+### Bug Fixes
+
+- Redo link for pypi badge
+  ([`eb24dff`](https://github.com/UBC-MDS/ImaGenie/commit/eb24dff651c9a96f4349844fa9db06883132d997))
+
+### Features
+
+- Added TestPyPi badge
+  ([`759498e`](https://github.com/UBC-MDS/ImaGenie/commit/759498e8ef14489adadf2f3d6cd1173cc614c5fa))
+
+- Ci-cd badge
+  ([`1e24484`](https://github.com/UBC-MDS/ImaGenie/commit/1e244844da0e1146637fc88e206b3fc8be536be5))
+
+- Project status badge
+  ([`66b0a51`](https://github.com/UBC-MDS/ImaGenie/commit/66b0a513f470e64dabec5f7f0980d8c5112a2eaf))
+
+- Pypi badge added
+  ([`0a3d23e`](https://github.com/UBC-MDS/ImaGenie/commit/0a3d23e9d80f5bac1522265bc08fd4cd14d1d2df))
+
+- Update website link in pypi badge
+  ([`1e54047`](https://github.com/UBC-MDS/ImaGenie/commit/1e54047caf89f4336a6c6bc407360625a33e9503))
+
+
 ## v1.4.0 (2025-02-03)
 
 ### Bug Fixes
