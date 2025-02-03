@@ -1,6 +1,45 @@
 # CHANGELOG
 
 
+## v1.4.0 (2025-02-03)
+
+### Bug Fixes
+
+- Added comment to highlight test for np.ndarray in test suite to address issue 16
+  ([`bb95f11`](https://github.com/UBC-MDS/ImaGenie/commit/bb95f11c603741496cd3432f1370b50a538883ca))
+
+- Added subtitle to the Grayscale function section
+  ([`07d4676`](https://github.com/UBC-MDS/ImaGenie/commit/07d4676a4ac850b102d8d8879108446a93812fce))
+
+- Addressed issue 16 to correct documentation of blur
+  ([`a195dad`](https://github.com/UBC-MDS/ImaGenie/commit/a195dad66e0f1ca95667eb5378bb967f943ee2bc))
+
+- Edited scale function's docstring to make it consistent with other functions.
+  ([`fa7f046`](https://github.com/UBC-MDS/ImaGenie/commit/fa7f0467ae61095cddc6adf2420133f3984bbc78))
+
+- Edited tutorial subtitles to make them more user-friendly.Added maximum input image size in the
+  tutorial.
+  ([`79b0af5`](https://github.com/UBC-MDS/ImaGenie/commit/79b0af5ab9150b7d863c1690a1d638c517ddd111))
+
+- Fix typos in function documentation
+  ([`e720a80`](https://github.com/UBC-MDS/ImaGenie/commit/e720a8021c0e5b304767c31f00833050d00b6231))
+
+- Fixed typos in readme
+  ([`6f3d195`](https://github.com/UBC-MDS/ImaGenie/commit/6f3d19559b22965f2e52c6e6e57973e67425cad9))
+
+- Update poetry environement
+  ([`d894fca`](https://github.com/UBC-MDS/ImaGenie/commit/d894fca4f5f6030f1bf0bcd50fe2f5fe67c705df))
+
+### Features
+
+- Added another layer/subtitles in ImaGenie Tutorial sidebar.
+  ([`3fb72e2`](https://github.com/UBC-MDS/ImaGenie/commit/3fb72e2a5b502ae42220f332989e931d0eeccc8d))
+
+- Updated functions' docstrings, from ndarray to np.ndarray to make them more accurate and
+  consistent.
+  ([`4bc8a1a`](https://github.com/UBC-MDS/ImaGenie/commit/4bc8a1ad13b5fa6b311e3f59a0be0faad77eb4fc))
+
+
 ## v1.3.0 (2025-02-02)
 
 ### Bug Fixes
