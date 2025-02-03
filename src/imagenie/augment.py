@@ -10,7 +10,7 @@ def augment(images, operations):
 
     Parameters:
     ----------
-    images : list of ndarray
+    images : list of np.ndarray
         A list of images (as NumPy arrays) to process.
     operations : list of tuple
         A list of operations to apply, where each operation is a tuple
@@ -19,7 +19,7 @@ def augment(images, operations):
 
     Returns:
     -------
-    list of ndarray
+    list of np.ndarray
         The list of augmented images.
     """
     
@@ -33,13 +33,13 @@ def augment(images, operations):
         # Validate size limit
         if image.shape[0] > 1028 or image.shape[1] > 1028:
             raise ValueError("Input image size exceeds the 1028x1028 limit.")
+        
         # Break down the operations into functions and their respective parameters
         for operation in operations:
             func, *params = operation
             
             # Check if function is allowed
             if func.__name__ not in ALLOWED_FUNCTIONS:
-                warnings.warn(f"Invalid function '{func.__name__}' specified. Defaulting to horizontal flip (flip).", UserWarning)
                 raise ValueError(f"Function {func.__name__} is not allowed. Allowed functions are: {', '.join(ALLOWED_FUNCTIONS)}")
             
             # Apply each operation in the sequence

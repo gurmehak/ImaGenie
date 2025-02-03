@@ -6,12 +6,12 @@ def grayscale(image):
 
     Parameters:
     ----------
-    image : ndarray
+    image : np.ndarray
         The input image, represented as a NumPy array. It can be a 3D array (RGB) or a 2D array (already grayscale).
 
     Returns:
     -------
-    ndarray
+    np.ndarray
         The grayscale image as a 2D NumPy array (dtype=uint8).
 
     Raises:
