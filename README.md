@@ -3,7 +3,7 @@
 ![Python version](https://img.shields.io/pypi/pyversions/ImaGenie)
 ![Last commit](https://img.shields.io/github/last-commit/UBC-MDS/ImaGenie)
 [![ci-cd](https://github.com/UBC-MDS/ImaGenie/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/ImaGenie/actions/workflows/ci-cd.yml)
-
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 # ImaGenie
 
