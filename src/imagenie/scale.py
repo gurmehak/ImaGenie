@@ -5,11 +5,12 @@ import warnings
 
 
 def scale(image, N = None):
-    """Scale an image file by a factor of N.
+    """
+    Scale an image file by a factor of N.
 
     Parameters
     ----------
-    image : ndarray
+    image : np.ndarray
         The input image to be scaled. Must be a NumPy array.
     
     N: float
@@ -17,7 +18,7 @@ def scale(image, N = None):
 
     Returns
     -------
-    ndarray
+    np.ndarray
         The scaled image that is represented as np array.
 
     Examples

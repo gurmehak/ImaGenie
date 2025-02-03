@@ -1,30 +1,25 @@
 import numpy as np
 def blur(image, stdev=1.0):
-    """
-    Add noise to image using a Gaussian filter
+    """Add noise to image using a Gaussian filter.
 
-    Parameters:
+    Parameters
     ----------
-    image : ndarray
-        The input image to be blurred, represented as a NumPy array 
-        or similar format 
+    image : np.ndarray
+        The input image to be blurred, represented as a NumPy array\n 
+        or similar format.
+    
     stdev : Float 
-        Standard deviation for Gaussian/Normal distribution used to 
-        calculate the value of image pixels after filtering
-        Default is 1.0 for Standard Normal Distribution
+        Standard deviation for Gaussian/Normal distribution used to\n
+        calculate the value of image pixels after filtering.
+        Default is 1.0 for Standard Normal Distribution.
 
-    Returns:
+    Returns
     -------
-    ndarray
+    np.ndarray
         The blurred image as a NumPy array.
 
-    Raises:
-    ------
-    ValueError
-        If the specified standard deviation is not positive.
-
-    Examples:
-    ---------
+    Examples
+    --------
     >>> print(image)
         [0.10196079, 0.627451  , 0.74509805],
         [0.11372549, 0.6666667 , 0.78431374],
@@ -42,22 +37,18 @@ def blur(image, stdev=1.0):
         [0.49490717, 0.53276986, 0.5705702 ],
         [0.4977027 , 0.5357282 , 0.5736908 ]
     """
-
     if stdev is not None:
         if not isinstance(stdev, (int, float)):
             raise TypeError("Standard deviation must be a numeric value (int or float).")
         if stdev <= 0:
             raise ValueError("Standard deviation must be a positive number.")
-    # Calculate new size. If N is None, return original image numpy array
-    else:
-        return image
     
     if not isinstance(image, np.ndarray):
         raise TypeError("Image must be a numpy array")
     
     #Warn if the original image exceeds 1028 * 1028
     if image.shape[0] > 1028 or image.shape[1] > 1028:
-        raise ValueError("Input image size exceeds the 1028x1028 limit.")
+        raise ValueError("The input image exceeds the maximum size of 1028x1028.")
     
     filter_size = 2 * int(4 * stdev + 0.5) + 1
     gaussian_filter = np.zeros((filter_size, filter_size), np.float32)

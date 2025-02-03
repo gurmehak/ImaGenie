@@ -10,7 +10,7 @@ def augment(images, operations):
 
     Parameters:
     ----------
-    images : list of ndarray
+    images : list of np.ndarray
         A list of images (as NumPy arrays) to process.
     operations : list of tuple
         A list of operations to apply, where each operation is a tuple
@@ -19,7 +19,7 @@ def augment(images, operations):
 
     Returns:
     -------
-    list of ndarray
+    list of np.ndarray
         The list of augmented images.
     """
     
