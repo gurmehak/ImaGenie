@@ -11,19 +11,19 @@
 ## Features
 
 * Flipping: `flip(image, direction=0)`
-    Flips the input image either horizontally or vertically. Useful for augmenting datasets by introducing mirror-image variations. `0` = horizontal flip, `1` = vertical flip 
+    flips the input image either horizontally or vertically. Useful for augmenting datasets by introducing mirror-image variations. `0` = horizontal flip, `1` = vertical flip 
 
 * Scaling: `scale(image, N)`
-    Resizes the input image by a given scale factor `N`. This is crucial for normalizing or creating variations in image resolution.
+    resizes the input image by a given scale factor `N`. This is crucial for normalizing or creating variations in image resolution.
 
 * Blurring: `blur(image, stdev=1.0)`
-    Applies a Gaussian blur effect to the image. Helps simulate real-world noise or reduce sharpness for specific use cases.
+    applies a Gaussian blur effect to the image. Helps simulate real-world noise or reduce sharpness for specific use cases.
 
 * Grayscaling: `grayscale(image)`
-    Converts the image to grayscale. Ideal for models that only require intensity information, excluding color features.
+    converts the image to grayscale. Ideal for models that only require intensity information, excluding color features.
 
 * Augmenting with a sequence of operations: `augment(images, operations)`
-    Applies a sequence of user-defined augmentation operations to a list of images. Useful for image generating images for computer vision tasks.
+    applies a sequence of user-defined augmentation operations to a list of images. Useful for image generating images for computer vision tasks.
 
 ## Installation
 To install from pypi:
@@ -55,34 +55,34 @@ $ pytest
 ```
 
 ## Usage
-A few exampls to get you sarted with `imagenie`:
+A few exampls to get you started with `imagenie`:
 
 1. Import the functions from the package
 
-```
-from imagenie.flip import flip
-from imagenie.scale import scale
-from imagenie.blur import blur
-from imagenie.grayscale import grayscale
-from imagenie.augment import augment
-```
+    ```
+    from imagenie.flip import flip
+    from imagenie.scale import scale
+    from imagenie.blur import blur
+    from imagenie.grayscale import grayscale
+    from imagenie.augment import augment
+    ```
 
 2. Load the images as Numpy arrays
 
-```
-import matplotlib.pyplot as plt
-image = plt.imread(IMAGE_PATH)
-image2 = plt.imread(IMAGE_PATH)
-```
+    ```
+    import matplotlib.pyplot as plt
+    image = plt.imread(IMAGE_PATH)
+    image2 = plt.imread(IMAGE_PATH)
+    ```
 
-3. Leverage `imagenie`'s image modifictaion functions
+3. Leverage `imagenie`'s image modification functions
 
-    - Flip image horizontaly or vertically
+    - Flip image horizontally or vertically
     ```
     flipped_image = flip(image, direction = 1)
     ```
 
-    - Scale image by a desrired scaling factore
+    - Scale image by a desired scaling factor
     ```
     scaled_image = scale(image, N = 0.4)
     ```
@@ -92,7 +92,7 @@ image2 = plt.imread(IMAGE_PATH)
     blurred_image = blur(image, stdev = 2.0)
     ```
 
-    - Convert RGB to graycsaled images
+    - Convert RGB to grayscaled images
     ```
     grayed_image = grayscale(image)
     ```
