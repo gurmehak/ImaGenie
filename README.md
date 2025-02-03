@@ -2,6 +2,7 @@
 [![codecov](https://codecov.io/github/UBC-MDS/ImaGenie/graph/badge.svg?token=Dd6MnDTOH7)](https://codecov.io/github/UBC-MDS/ImaGenie)
 ![Python version](https://img.shields.io/pypi/pyversions/ImaGenie)
 ![Last commit](https://img.shields.io/github/last-commit/UBC-MDS/ImaGenie)
+[![ci-cd](https://github.com/UBC-MDS/ImaGenie/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/ImaGenie/actions/workflows/ci-cd.yml)
 
 
 # ImaGenie
