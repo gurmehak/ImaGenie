@@ -111,8 +111,11 @@ Reference for other image processing libraries:
 
 ## Contributors
 
+- **Gurmehak Kaur (active)**
+
+Past Contributors:
+
 - Agam Sanghera
-- Gurmehak Kaur
 - Yuhan Fan
 - Yichun Liu
 
